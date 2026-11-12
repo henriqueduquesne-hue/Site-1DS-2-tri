@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu blog</title>
+<style>
+body{
+background-color: black;
+font-family: Arial;
+}
+
+header, main, footer{
+background-color: rgb(20, 60, 200);
+color: white;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+border: 5px solid #00bfff;
+padding: 16px;
+}
+
+main{
+background-color: black;
+color: deepskyblue;
+display: flex;
+}
+
+img{
+width: 300px;
+height: 200px;
+}
+
+button{
+background-color: blue;
+color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Clube de Resenha Literária</h1>
+<p> Venha se apaixonar pelos livros.</p>
+</header>
+
+<main>
+<div>
+<h2>Sobre o clube</h2>
+<p>O clube é para os alunos que gostam de ler e querem conversar sobre livros com os colegas. Em cada encontro alguem apresenta a resenha de um livro e depois todo mundo fala o que achou.</p>
+
+</div>
+</main>
+
+<main>
+<img src="Gemini_Generated_Image_eav7v5eav7v5eav7.jpeg" alt="alunos lendo livros">
+<div>
+<h2>Meu primeiro post</h2>
+<p>Sejam bem vindos ao Clube de Resenha Literária do Colégio Branca da Mota Fernandes. Aqui irei compartilhar as resenhas dos livros que os alunos que participam dos encontros leram.</p>
+<p><b>Por: Henrique Duquesne</b></p>
+<button onclick="clicar(this)">❤️ <span>0</span></button>
+<button onclick="clicar(this)">💥<span>0</span></button>
+</div>
+</main>
+
+<footer>
+<p>Clube de Resenha Literária - Colégio Branca da Mota Fernandes</p>
+</footer>
+
+<script>
+function clicar(botao) {
+console.log("fui clicado");
+botao.querySelector("span").textContent++;
+}
+</script>
+</body>
+</html>
